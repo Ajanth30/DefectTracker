@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EurekaServer" />
+        <module name="EmployeeServices" />
+        <module name="ZuulGateway" />
+        <module name="DefectService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EmployeeService" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="DefectService" options="-parameters" />
+      <module name="EmployeeService" options="-parameters" />
+      <module name="EmployeeServices" options="-parameters" />
+      <module name="EurekaServer" options="-parameters" />
+      <module name="ZuulGateway" options="-parameters" />
+    </option>
+  </component>
+</project>
